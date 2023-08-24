@@ -13,6 +13,11 @@ Run Word Counter example:
 clojure -M -m rama-playground.simple-word-count
 ```
 
+Analytics Application example:
+```
+clojure -M -m rama-playgound.analytics-app
+```
+
 Note on working in REPL:
 
 When I had [io.github.nubank/morse](https://github.com/nubank/morse) on the classpath in my repl profile the examples failed to run with `Failed to generate constants class` exception. But using just plain nREPL worked:
@@ -20,3 +25,5 @@ When I had [io.github.nubank/morse](https://github.com/nubank/morse) on the clas
 ```
 clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version "RELEASE"}}}' -M -m nrepl.cmdline
 ```
+
+For Emacs users, standard `cider-jack-in` will work as well.
